@@ -38,17 +38,10 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
 Plug 'thaerkh/vim-indentguides'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"JavaScript || HTML || CSS
-Plug 'pangloss/vim-javascript'
-Plug 'othree/html5.vim'
-Plug 'jelera/vim-javascript-syntax'
-Plug 'isruslan/vim-es6'
-Plug 'gko/vim-coloresque'
-Plug 'hail2u/vim-css3-syntax'
-Plug 'ap/vim-css-color'
+
 "Theme
 Plug 'rafi/awesome-vim-colorschemes'
-" Test plugins
+
 " Language Client Server
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',

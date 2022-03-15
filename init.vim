@@ -46,6 +46,10 @@ Plug 'rafi/awesome-vim-colorschemes'
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
+    \ 'c': ['ccls', '--log-file=/tmp/cc.log'],
+    \ 'cpp': ['ccls', '--log-file=/tmp/cc.log'],
+    \ 'cuda': ['ccls', '--log-file=/tmp/cc.log'],
+    \ 'objc': ['ccls', '--log-file=/tmp/cc.log'],
     \ }
 
 " Snippets
@@ -59,7 +63,7 @@ call plug#end()
 " AirLine
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme= 'papercolor'
+let g:airline_theme= 'minimalist'
 
 " ALE
 let g:ale_linters = {
@@ -97,8 +101,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 
 "Theme
-colorscheme PaperColor
-
+colorscheme space-vim-dark
 "********************************
 "	Remaps
 "********************************

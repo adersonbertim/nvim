@@ -41,7 +41,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 "Theme
 Plug 'rafi/awesome-vim-colorschemes'
-
+Plug 'dracula/vim'
 " Language Client Server
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
@@ -55,6 +55,10 @@ Plug 'autozimu/LanguageClient-neovim', {
 " Snippets
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+
+"Fzf
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+
 call plug#end()
 
 "*********************************
@@ -63,7 +67,7 @@ call plug#end()
 " AirLine
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme= 'minimalist'
+let g:airline_theme= 'dracula'
 
 " ALE
 let g:ale_linters = {
@@ -101,7 +105,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 
 "Theme
-colorscheme space-vim-dark
+colorscheme dracula
 "********************************
 "	Remaps
 "********************************
@@ -119,7 +123,12 @@ inoremap <C-k> <C-o>gk
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
 inoremap <C-j> <C-o>gj
-
+"Maps Fzf and Resize
+nmap <C-p> :FZF<CR>
+nmap <C-h> :vertical resize -4<CR>
+nmap <C-l> :vertical resize +4<CR>
+nmap <C-k> :resize -4<CR>
+nmap <C-j> :resize +4<CR>
 
 "*********************************
 " autocmd/Terminal
@@ -127,7 +136,7 @@ inoremap <C-j> <C-o>gj
 " open new split panes to right and below
 set splitright
 set splitbelow
-" turn terminal to normal mode with escape
+"turn terminal to normal mode with escape
 tnoremap <Esc> <C-\><C-n>
 " start terminal in insert mode
 au BufEnter * if &buftype == 'terminal' | :startinsert | endif

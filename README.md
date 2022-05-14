@@ -1,2 +1,3 @@
-# Oooops
-Actuality i use Lunar Vim, but the code i have been used in my Neovim is here.
+# My Neovim Setup.
+
+I have new experiencies with nvim configured in lua and i will show my new configs soon....

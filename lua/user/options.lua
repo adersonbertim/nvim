@@ -6,7 +6,7 @@ vim.opt.splitright = true
 vim.opt.ignorecase = true
 vim.opt.hlsearch = true
 vim.opt.pumheight = 10
--- vim.opt.termguicolors = true
+vim.opt.termguicolors = true
 vim.opt.expandtab = true
 vim.opt.undofile = true
 vim.opt.shiftwidth = 2
@@ -16,7 +16,7 @@ vim.opt.scrolloff = 8
 vim.opt.wrap = false
 vim.opt.cursorline = true
 vim.opt.fileencoding = "utf-8" 
-
+vim.g.tokyonight_style = "night"
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]]

@@ -66,6 +66,9 @@ return packer.startup(function(use)
   }
   use "p00f/nvim-ts-rainbow"
   use "nvim-treesitter/playground"
+  -- Autopairs, integrates with both cmp and Treesitter
+  use "windwp/nvim-autopairs"
+
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()

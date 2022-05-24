@@ -75,6 +75,12 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-tree.lua'
   -- Toggle Term
   use "akinsho/toggleterm.nvim"
+  -- Comments
+  use "numToStr/Comment.nvim"
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
+  -- Buffer line
+  use "akinsho/bufferline.nvim"
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end

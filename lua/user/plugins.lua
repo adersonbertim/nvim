@@ -73,6 +73,8 @@ return packer.startup(function(use)
   -- NvimTree 
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
+  -- Toggle Term
+  use "akinsho/toggleterm.nvim"
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end

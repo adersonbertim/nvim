@@ -44,6 +44,8 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   --Colorschemes
   use "folke/tokyonight.nvim"
+  use "rose-pine/neovim"
+  use "rafamadriz/neon"
     -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
